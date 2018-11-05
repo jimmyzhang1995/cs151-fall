@@ -1,0 +1,10 @@
+Compiler error because an Object cannot convert to Person. Fred is contained in people.ser, because we added it in the beginning. 
+
+Fix the exception by making Person implement the appropriate interface. Now your program should compile and run. What friends does cloneOfFred have? Why?
+Ans: cloneOfFred has freinds Barney, because it has the same address to fred. 
+
+We don't want that behavior. Make it so that cloneOfFred has its own list of friends, by cloning the original list. How did you do that? Run the program again and verify that the program has been fixed.
+Ans: add a return null clone in Person class.
+
+Should we copy even more deeply? Suppose the clone method looks like this:
+Ans:cloneOfFred does not have the same friend that fred has.  
